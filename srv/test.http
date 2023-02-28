@@ -1,0 +1,13 @@
+### GET /Admin/Authors
+GET http://localhost:4004/emp-srv/Employee
+
+### POST Admin/Products
+POST http://localhost:4004/emp-srv/Employee
+Content-Type: application/json
+
+{
+    "title" : "Harry Potter",
+    "descr" : "Half Blood Prince",
+    "stock" : 20,
+    "price" : 120
+}

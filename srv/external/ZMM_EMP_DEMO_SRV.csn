@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "creator": "cds-dk 6.5.0"
+  },
+  "$version": "2.0",
+  "definitions": {
+    "ZMM_EMP_DEMO_SRV": {
+      "kind": "service",
+      "@cds.external": true,
+      "@m.IsDefaultEntityContainer": "true",
+      "@sap.supported.formats": "atom json xlsx"
+    },
+    "ZMM_EMP_DEMO_SRV.EMPLOYEESet": {
+      "kind": "entity",
+      "@cds.external": true,
+      "@cds.persistence.skip": true,
+      "@sap.creatable": "false",
+      "@sap.updatable": "false",
+      "@sap.deletable": "false",
+      "@sap.pageable": "false",
+      "@sap.content.version": "1",
+      "elements": {
+        "Empid": {
+          "key": true,
+          "type": "cds.String",
+          "length": 10,
+          "@sap.unicode": "false",
+          "@sap.label": "Employee ID",
+          "@sap.creatable": "false",
+          "@sap.updatable": "false",
+          "@sap.sortable": "false",
+          "@sap.filterable": "false",
+          "notNull": true
+        },
+        "Empname": {
+          "type": "cds.String",
+          "length": 20,
+          "@sap.unicode": "false",
+          "@sap.label": "Employee Name",
+          "@sap.creatable": "false",
+          "@sap.updatable": "false",
+          "@sap.sortable": "false",
+          "@sap.filterable": "false",
+          "notNull": true
+        },
+        "Empadd": {
+          "type": "cds.String",
+          "length": 40,
+          "@sap.unicode": "false",
+          "@sap.label": "Employee Address",
+          "@sap.creatable": "false",
+          "@sap.updatable": "false",
+          "@sap.sortable": "false",
+          "@sap.filterable": "false",
+          "notNull": true
+        },
+        "Empdes": {
+          "type": "cds.String",
+          "length": 20,
+          "@sap.unicode": "false",
+          "@sap.label": "Employee Designation",
+          "@sap.creatable": "false",
+          "@sap.updatable": "false",
+          "@sap.sortable": "false",
+          "@sap.filterable": "false",
+          "notNull": true
+        }
+      }
+    }
+  }
+}

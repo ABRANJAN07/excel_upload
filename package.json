@@ -1,0 +1,33 @@
+{
+  "name": "excel_upload",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@sap-cloud-sdk/http-client": "^2.14.0",
+    "@sap/cds": "^6",
+    "@sap/cds-dk": "^6.5.2",
+    "express": "^4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "sqlite3": "^5.0.4"
+  },
+  "scripts": {
+    "start": "cds run"
+  },
+  "cds": {
+    "requires": {
+      "ZMM_EMP_DEMO_SRV": {
+        "kind": "odata-v2",
+        "model": "srv/external/ZMM_EMP_DEMO_SRV",
+        "credentials": {
+          "destination": "usawcon00014",
+          "path": "/sap/opu/odata/sap/ZMM_EMP_DEMO_SRV"
+        }
+      }
+    }
+  }
+}
